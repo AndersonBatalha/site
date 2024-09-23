@@ -54,22 +54,50 @@
 
     <footer id="contato"> <!-- Rodapé -->
         <h1>Contato</h1>
-        <p>Tem uma ideia de projeto? Entre em contato comigo!</p>
+        <p>Tem uma ideia de projeto?</p>
 
-        <p>
-            Email: <a href="mailto:andersonpbatalha@gmail.com">andersonpbatalha@gmail.com</a> <!-- link clicável -->
-        </p>
-        <p>
-            Telefone: <a href="tel:47992514997">(47) 9 9251-4997</a>
-        </p>
-        <p>
-            Whatsapp: <a href="https://wa.me/5547992514997" target="_blank">(47) 9 9251-4997</a>
-        </p>
-        <p>
-            Endereço: <a href="https://maps.app.goo.gl/DyjfYiJWkMaCyw2V6" target="_blank">Rua Francisco Wolke, 158</a>
-        </p>
-
+        <form action="" method="post">
+            <fieldset>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" required autocomplete="on" maxlength="100" placeholder="Seu nome" size="40" autofocus>    
+                </div>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" required autocomplete="on" maxlength="50" size="40">    
+                </div>
+                <div>
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="on" maxlength="20" size="40">    
+                </div>
+                <div>
+                    <label for="assunto">Assunto: </label>
+                    <select name="assunto" id="assunto">
+                        <option value="orcamento">Orçamento</option>
+                        <option value="projeto">Projeto</option>
+                        <option value="duvida">Dúvidas</option>
+                        <option value="sugestoes">Sugestões</option>
+                        <option value="reclamacoes">Reclamações</option>
+                        <option value="outros">Outros assuntos</option>
+                    </select>    
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea name="mensagem" id="" cols="50" rows="5" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Desejo receber notícias e atualizações via newsletter</label>
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="Enviar mensagem">
+                    <input type="reset" value="Limpar campos">
+                </div>
+            </fieldset>
+        </form>
+    
         <small>Todos os direitos reservados.</small>
+
     </footer>
 </body>
 </html>
